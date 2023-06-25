@@ -80,12 +80,12 @@ HTML headings are defined with the `<h1>` to `<h6>` tags with H1 being the highe
 
 The effects are:
 
-# Heading Level 1
-## Heading Level 2
-### Heading Level 3
-#### Heading Level 4
-##### Heading Level 5
-###### Heading Level 6
+<h1>Heading level 1</h1>
+<h2>Heading level 2</h2>
+<h3>Heading level 3</h3>
+<h4>Heading level 4</h4>
+<h5>Heading level 5</h5>
+<h6>Heading level 6</h6>
 
 Note that CSS can drastically change the rendering.
 
