@@ -137,7 +137,7 @@ For example, `<b>bold text</b>` indicates that visual output devices should rend
 Hypertext markup makes parts of a document into links to other documents
 An anchor element creates a hyperlink in the document and its href attribute sets the link's target URL. For example, the HTML markup `<a href="https://en.wikipedia.org/">Wikipedia</a>`, will render the word "Wikipedia" as a hyperlink. To render an image as a hyperlink, an img element is inserted as content into the a element. Like br, img is an empty element with attributes but no content or closing tag. `<a href="https://example.org"><img src="image.gif" alt="descriptive text" width="50" height="50" border="0"></a>`.
 
-### Attributes
+## Attributes
 
 Most of the attributes of an element are name–value pairs, separated by = and written within the start tag of an element after the element's name. The value may be enclosed in single or double quotes, although values consisting of certain characters can be left unquoted in HTML (but not XHTML).[74][75 Leaving attribute values unquoted is considered unsafe.[76] In contrast with name-value pair attributes, there are some attributes that affect the element simply by their presence in the start tag of the element,[6] like the ismap attribute for the img element.[77]
 
