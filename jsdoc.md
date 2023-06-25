@@ -84,3 +84,4 @@ if (true) {
  }
  console.log(y); // ReferenceError: y is not defined
 ```
+[Source: freeCodeCamp](https://technical-documentation-page.freecodecamp.rocks/)
