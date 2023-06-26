@@ -129,10 +129,12 @@ Comments can help in the understanding of the markup and do not display in the w
 
 There are several types of markup elements used in HTML:
 
-### Structural markup indicates the purpose of text
+**Structural markup indicates the purpose of text**
+
 For example, `<h2>Golf</h2>` establishes "Golf" as a second-level heading. Structural markup does not denote any specific rendering, but most web browsers have default styles for element formatting. Content may be further styled using Cascading Style Sheets.
 
-### Presentational markup indicates the appearance of the text, regardless of its purpose
+**Presentational markup indicates the appearance of the text, regardless of its purpose**
+
 For example, `<b>bold text</b>` indicates that visual output devices should render "boldface" in bold text, but gives a little indication what devices that are unable to do this (such as aural devices that read the text aloud) should do. In the case of both `<b>bold text</b>` and `<i>italic text</i>`, there are other elements that may have equivalent visual renderings but that are more semantic in nature, such as `<strong>strong text</strong>` and `<em>emphasized text</em>` respectively. It is easier to see how an aural user agent should interpret the latter two elements. However, they are not equivalent to their presentational counterparts: it would be undesirable for a screen reader to emphasize the name of a book, for instance, but on a screen, such a name would be italicized. Most presentational markup elements have become deprecated under the HTML 4.0 specification in favor of using CSS for styling.
 Hypertext markup makes parts of a document into links to other documents
 An anchor element creates a hyperlink in the document and its href attribute sets the link's target URL. For example, the HTML markup `<a href="https://en.wikipedia.org/">Wikipedia</a>`, will render the word "Wikipedia" as a hyperlink. To render an image as a hyperlink, an img element is inserted as content into the a element. Like br, img is an empty element with attributes but no content or closing tag. `<a href="https://example.org"><img src="image.gif" alt="descriptive text" width="50" height="50" border="0"></a>`.
