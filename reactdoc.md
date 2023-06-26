@@ -121,6 +121,7 @@ The `package.json` file contains information about our project that Node.js/npm 
 
 ## Exploring our first React component
 
+
 In React, a **component** is a reusable module that renders a part of our app. These parts can be big or small, but they are usually clearly defined: they serve a single, obvious purpose.
 
 Let's open `src/App.js`, since our browser is prompting us to edit it. This file contains our first component, `App`, and a few other lines of code:
