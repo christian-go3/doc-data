@@ -20,7 +20,7 @@ Another important component is the HTML document type declaration, which trigger
 
 The following is an example of the classic "Hello, World!" program:
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -58,7 +58,7 @@ The general form of an HTML element is therefore: `<tag attribute1="value1" attr
 
 Header of the HTML document: `<head>...</head>`. The title is included in the head, for example:
 
-```
+```html
 <head>
   <title>The Title</title>
   <link rel="stylesheet" href="stylebyjimbowales.css" /> <!-- Imports Stylesheets -->
@@ -69,7 +69,7 @@ Header of the HTML document: `<head>...</head>`. The title is included in the he
 
 HTML headings are defined with the `<h1>` to `<h6>` tags with H1 being the highest (or most important) level and H6 the least:
 
-```
+```html
 <h1>Heading level 1</h1>
 <h2>Heading level 2</h2>
 <h3>Heading level 3</h3>
@@ -91,7 +91,7 @@ Note that CSS can drastically change the rendering.
 
 Paragraphs:
 
-```
+```html
 <p>Paragraph 1</p> <p>Paragraph 2</p>
 ```
 
@@ -99,13 +99,13 @@ Paragraphs:
 
 `<br />`. The difference between `<br />` and `<p>` is that `<br />` breaks a line without altering the semantic structure of the page, whereas `<p>` sections the page into paragraphs. The element `<br />` is an empty element in that, although it may have attributes, it can take no content and it may not have an end tag.
 
-```
+```html
 <p>This <br /> is a paragraph <br /> with <br /> line breaks</p>
 ```
 
 This is a link in HTML. To create a link the `<a>` tag is used. The href attribute holds the URL address of the link.
 
-```
+```html
 <a href="https://www.wikipedia.org/">A link to Wikipedia!</a>
 ```
 
@@ -113,7 +113,7 @@ This is a link in HTML. To create a link the `<a>` tag is used. The href attribu
 
 There are many possible ways a user can give input/s like:
 
-```
+```html
 <input type="text" /> <!-- This is for text input -->
 <input type="file" /> <!-- This is for uploading files -->
 <input type="checkbox" /> <!-- This is for checkboxes -->
@@ -121,7 +121,7 @@ There are many possible ways a user can give input/s like:
 
 ### Comments:
 
-```
+```html
 <!-- This is a comment -->
 ```
 
@@ -149,13 +149,13 @@ There are several common attributes that may appear in many elements :
 - The `title` attribute is used to attach a subtextual explanations to an element. In most browsers this attribute is displayed as a tooltip.
 - The `lang` attribute identifies the natural language of the element's contents, which may be different from that of the rest of the document. For example, in an English-language document:
 
-```
+```html
 <p>Oh well, <span lang="fr">c'est la vie</span>, as they say in France.</p>
 ```
 
 The abbreviation element, `abbr`, can be used to demonstrate some of these attributes:
 
-```
+```html
 <abbr id="anId" class="jargon" style="color:purple;" title="Hypertext Markup Language">HTML</abbr>
 ```
 
