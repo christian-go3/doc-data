@@ -119,7 +119,7 @@ The public directory will also be published when you build and deploy a producti
 
 The `package.json` file contains information about our project that Node.js/npm uses to keep it organized. This file is not unique to React applications; create-react-app merely populates it. You don't need to understand this file at all to complete this tutorial, however, if you'd like to learn more about it, you can read package.json on the npm blog; we also talk about it in our Package management basics tutorial.
 
-## Exploring our first React component `<App/>`
+## Exploring our first React component
 
 In React, a **component** is a reusable module that renders a part of our app. These parts can be big or small, but they are usually clearly defined: they serve a single, obvious purpose.
 
