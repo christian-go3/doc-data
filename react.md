@@ -16,7 +16,7 @@ This article is going to focus on the use case of using React to render the enti
 
 ## How does React use JavaScript?
 
-```
+```jsx
 // JSX
 const heading = <h1>Mozilla Developer Network</h1>;
 ```
@@ -25,7 +25,7 @@ This heading constant is known as a JSX expression. React can use it to render t
 
 Suppose we wanted to wrap our heading in a `<header>` tag, for semantic reasons? The JSX approach allows us to nest our elements within each other, just like we do with HTML:
 
-```
+```jsx
 // JSX
 const header = (
   <header>
@@ -36,7 +36,7 @@ const header = (
 
 Of course, your browser can't read JSX without help. When compiled (using a tool like Babel or Parcel), our header expression would look like this:
 
-```
+```jsx
 // JSX
 const header = React.createElement(
   "header",
@@ -126,7 +126,7 @@ In React, a **component** is a reusable module that renders a part of our app. T
 
 Let's open `src/App.js`, since our browser is prompting us to edit it. This file contains our first component, `App`, and a few other lines of code:
 
-```
+```jsx
 // JSX
 
 import logo from "./logo.svg";
@@ -160,7 +160,7 @@ The `App.js` file consists of three main parts: some `import` statements at the 
 
 The `import` statements at the top of the file allow `App.js` to use code that has been defined elsewhere. Let's look at these statements more closely.
 
-```
+```jsx
 // JSX
 import logo from "./logo.svg";
 import "./App.css";
@@ -178,7 +178,7 @@ After the imports, we have a function named `App`. Whereas most of the JavaScrip
 
 Let's look at `App` more closely.
 
-```
+```jsx
 // JSX
 
 function App() {
@@ -210,7 +210,7 @@ Take a moment to change the `<p>` tag on line 6 so that it reads "Hello, World!"
 
 Your `App` component should now look like this:
 
-```
+```jsx
 // JSX
 function App() {
   return (
