@@ -22,7 +22,7 @@ CSS is a rule-based language — you define the rules by specifying groups of st
 
 For example, you can decide to have the main heading on your page to be shown as large red text. The following code shows a very simple CSS rule that would achieve the styling described above:
 
-```
+```css
 h1 {
   color: red;
   font-size: 5em;
@@ -38,7 +38,7 @@ CSS properties have different allowable values, depending on which property is b
 
 A CSS stylesheet will contain many such rules, written one after the other.
 
-```
+```css
 h1 {
   color: red;
   font-size: 5em;
@@ -53,7 +53,7 @@ p {
 
 By making our heading red, we have already demonstrated that we can target and style an HTML element. We do this by targeting an element selector — this is a selector that directly matches an HTML element name. To target all paragraphs in the document, you would use the selector p. To turn all paragraphs green, you would use:
 
-```
+```css
 p {
   color: green;
 }
@@ -61,7 +61,7 @@ p {
 
 You can target multiple selectors at the same time by separating the selectors with a comma. If you want all paragraphs and all list items to be green, your rule would look like this:
 
-```
+```css
 p,
 li {
   color: green;
@@ -74,7 +74,7 @@ When we look at a well-marked up HTML document, even something as simple as our 
 
 However, you will often want something other than the choice the browser has made. This can be done by choosing the HTML element that you want to change and using a CSS rule to change the way it looks. A good example is `<ul>`, an unordered list. It has list bullets. If you don't want those bullets, you can remove them like so:
 
-```
+```css
 li {
   list-style-type: none;
 }
@@ -84,7 +84,7 @@ li {
 
 A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser which HTML elements should be selected to have the CSS property values inside the rule applied to them. The element or elements which are selected by the selector are referred to as the subject of the selector.
 
-```
+```css
 h1 {
  color: blue;
  background-color: yellow;
@@ -99,7 +99,7 @@ p {
 
 If you have more than one thing which uses the same CSS then the individual selectors can be combined into a selector list so that the rule is applied to all of the individual selectors. For example, if I have the same CSS for an h1 and also a class of .special, I could write this as two separate rules.
 
-```
+```css
 h1 {
   color: blue;
 }
@@ -111,7 +111,7 @@ h1 {
 
 I could also combine these into a selector list, by adding a comma between them.
 
-```
+```css
 h1, .special {
   color: blue;
 }
@@ -119,7 +119,7 @@ h1, .special {
 
 White space is valid before or after the comma. You may also find the selectors more readable if each is on a new line.
 
-```
+```css
 h1,
 .special {
   color: blue;
@@ -134,21 +134,21 @@ There are a few different groupings of selectors, and knowing which type of sele
 
 This group includes selectors that target an HTML element such as an `<h1>`.
 
-```
+```css
 h1 {
 }
 ```
 
 It also includes selectors which target a class:
 
-```
+```css
 .box {
 }
 ```
 
 or, an ID:
 
-```
+```css
 #unique {
 }
 ```
@@ -157,14 +157,14 @@ or, an ID:
 
 This group of selectors gives you different ways to select elements based on the presence of a certain attribute on an element:
 
-```
+```css
 a[title] {
 }
 ```
 
 Or even make a selection based on the presence of an attribute with a particular value:
 
-```
+```css
 a[href="https://example.com"]
 {
 }
@@ -174,14 +174,14 @@ a[href="https://example.com"]
 
 This group of selectors includes pseudo-classes, which style certain states of an element. The `:hover` pseudo-class for example selects an element only when it is being hovered over by the mouse pointer:
 
-```
+```css
 a:hover {
 }
 ```
 
 It also includes pseudo-elements, which select a certain part of an element rather than the element itself. For example, `::first-line` always selects the first line of text inside an element (a `<p>` in the below case), acting as if a `<span>` was wrapped around the first formatted line and then selected.
 
-```
+```css
 p::first-line {
 }
 ```
@@ -190,7 +190,7 @@ p::first-line {
 
 The final group of selectors combine other selectors in order to target elements within our documents. The following, for example, selects paragraphs that are direct children of `<article>` elements using the child combinator (`>`):
 
-```
+```css
 article > p {
 }
 ```
