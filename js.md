@@ -22,7 +22,7 @@ This guide assumes you have the following basic background:
 
 To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
 
-```
+```js
 function greetMe(yourName) {
   alert("Hello " + yourName);
 }
@@ -44,21 +44,21 @@ You can declare a variable in three ways:
 
 With the keyword var. For example,
 
-```
+```js
 var x = 42;
 ```
 This syntax can be used to declare both local and global variables.
 
 By simply assigning it a value. For example,
 
-```
+```js
 x = 42;
 ```
 This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
 
 With the keyword let. For example,
 
-```
+```js
 let y = 13;
 ```
 This syntax can be used to declare a block scope local variable. See Variable scope below.
@@ -69,7 +69,7 @@ When you declare a variable outside of any function, it is called a global varia
 
 JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.
 
-```
+```js
 if (true) {
  	var x = 5;
  }
@@ -78,7 +78,7 @@ if (true) {
 
 This behavior changes, when using the let declaration introduced in ECMAScript 2015.
 
-```
+```js
 if (true) {
  	let y = 5;
  }
