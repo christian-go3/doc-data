@@ -71,7 +71,9 @@ Also bear in mind that React and ReactDOM produce apps that only work on a fairl
 
 create-react-app takes one argument: the name you'd like to give your app. create-react-app uses this name to make a new directory, then creates the necessary files inside it. Make sure you cd to the place you'd like your app to live on your hard drive, then run the following in your terminal:
 
-**Bash:** `$ npx create-react-app moz-todo-react`
+```bash
+$ npx create-react-app moz-todo-react
+```
 
 This creates a `moz-todo-react` directory, and does several things inside it:
 
@@ -88,7 +90,7 @@ When the process is complete, `cd` into the `moz-todo-react` directory and run t
 
 create-react-app gives us everything we need to develop a React application. Its initial file structure looks like this:
 
-```
+```bash
 moz-todo-react
 ├── README.md
 ├── node_modules
